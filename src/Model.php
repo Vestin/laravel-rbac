@@ -14,16 +14,6 @@ abstract class Model extends BaseModel
     protected $guarded = [];
 
     /**
-     * Get the current connection name for the model.
-     *
-     * @return string|null
-     */
-    public function getConnectionName()
-    {
-        return config('rbac.database.connection');
-    }
-
-    /**
      * Wrap table with prefix.
      *
      * @param  string  $table
